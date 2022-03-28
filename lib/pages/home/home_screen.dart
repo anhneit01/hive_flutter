@@ -7,7 +7,6 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 import '../../models/task.dart';
 import '../todo/todo.dart';
-import '../todo_list.dart';
 
 class HomeScreen extends StatefulWidget {
   static const routeName = '/HomeScreen';
@@ -32,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
           leadingIcon: 'assets/images/ic_menu.png',
           rightIcon: 'assets/images/ic_bell.png',
           title: 'Task Manager',
-          leftCallback: () => Navigator.pushNamed(context, TodoListScreen.routeName), 
+          leftCallback: () {}, 
           hasRightIcon: true,
         ), 
         preferredSize: const Size.fromHeight(80)
